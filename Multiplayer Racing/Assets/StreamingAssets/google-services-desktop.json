@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1001085162712",
+    "project_id": "multiplayer-race-1115a",
+    "storage_bucket": "multiplayer-race-1115a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001085162712:android:773aee4eb935f2106633ad",
+        "android_client_info": {
+          "package_name": "com.ghostInteractive.MultiplayerRace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLCbPm0CUrKJdAUetuA2q1DyGTj3aNPH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

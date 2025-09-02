@@ -24,10 +24,25 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Photon\\PhotonLibs\\netstandard2.0\\Photon3Unity3D.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Photon\\PhotonLibs\\WebSocket\\websocket-sharp.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonChat.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonRealtime.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonUnityNetworking.Demos.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonUnityNetworking.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonUnityNetworking.Utilities.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Photon\\PhotonLibs\\netstandard2.0\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Photon\\PhotonLibs\\WebSocket\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6\\lib\\ReportGenerator\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Analytics.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.App.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.AppCheck.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Auth.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Crashlytics.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Database.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Firestore.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Functions.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Installations.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Messaging.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Platform.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.RemoteConfig.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.Storage.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Firebase.TaskExtension.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\\Google.MiniJson.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Photon\\PhotonLibs\\netstandard2.0\\Photon3Unity3D.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Photon\\PhotonLibs\\WebSocket\\websocket-sharp.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonChat.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonRealtime.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonUnityNetworking.Demos.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonUnityNetworking.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\PhotonUnityNetworking.Utilities.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Firebase\\Plugins\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Photon\\PhotonLibs\\netstandard2.0\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Assets\\Photon\\PhotonLibs\\WebSocket\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\ScriptAssemblies\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6\\lib\\ReportGenerator\" -s=\"E:\\Ghost Interactive\\Task1 - Multiplayer Race\\Multiplayer Racing\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
+        "Assets/Firebase/Plugins/Firebase.Analytics.dll",
+        "Assets/Firebase/Plugins/Firebase.App.dll",
+        "Assets/Firebase/Plugins/Firebase.AppCheck.dll",
+        "Assets/Firebase/Plugins/Firebase.Auth.dll",
+        "Assets/Firebase/Plugins/Firebase.Crashlytics.dll",
+        "Assets/Firebase/Plugins/Firebase.Database.dll",
+        "Assets/Firebase/Plugins/Firebase.Firestore.dll",
+        "Assets/Firebase/Plugins/Firebase.Functions.dll",
+        "Assets/Firebase/Plugins/Firebase.Installations.dll",
+        "Assets/Firebase/Plugins/Firebase.Messaging.dll",
+        "Assets/Firebase/Plugins/Firebase.Platform.dll",
+        "Assets/Firebase/Plugins/Firebase.RemoteConfig.dll",
+        "Assets/Firebase/Plugins/Firebase.Storage.dll",
+        "Assets/Firebase/Plugins/Firebase.TaskExtension.dll",
+        "Assets/Firebase/Plugins/Google.MiniJson.dll",
         "Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll",
         "Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll",
         "Library/ScriptAssemblies/Assembly-CSharp.dll",
@@ -177,6 +192,51 @@
   "StatSignatures": [
     {
       "File": "Assets/csc.rsp"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Analytics.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.App.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.AppCheck.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Auth.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Crashlytics.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Database.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Firestore.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Functions.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Installations.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Messaging.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Platform.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.RemoteConfig.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.Storage.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Firebase.TaskExtension.dll"
+    },
+    {
+      "File": "Assets/Firebase/Plugins/Google.MiniJson.dll"
     },
     {
       "File": "Assets/mcs.rsp"
