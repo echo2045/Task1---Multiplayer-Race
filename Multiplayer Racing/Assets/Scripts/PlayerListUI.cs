@@ -7,33 +7,18 @@ using System.Linq;
 
 public class PlayerListUI : MonoBehaviourPunCallbacks
 {
-    private Text playerListText;
+    [SerializeField] private Text playerListText; // Assign in Inspector
     private bool showAtRaceEnd = false;
 
-    void Awake()
+    void Start()
     {
-        // Create Player List Text
-        GameObject listObj = new GameObject("PlayerListText");
-        listObj.transform.SetParent(transform);
-        playerListText = listObj.AddComponent<Text>();
-
-        playerListText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-        playerListText.fontSize = 40;
-        playerListText.alignment = TextAnchor.UpperCenter;
-        playerListText.color = Color.cyan;
-        playerListText.horizontalOverflow = HorizontalWrapMode.Overflow;
-        playerListText.verticalOverflow = VerticalWrapMode.Overflow;
-
-        // Position: lower third of top third
-        playerListText.rectTransform.anchorMin = new Vector2(0.5f, 0.5f + 0.33f * 0.33f); // 0.5 + 1/9 ? 0.611
-        playerListText.rectTransform.anchorMax = new Vector2(0.5f, 0.5f + 0.33f * 0.33f);
-        playerListText.rectTransform.pivot = new Vector2(0.5f, 1f);
-        playerListText.rectTransform.anchoredPosition = Vector2.zero;
-        playerListText.rectTransform.sizeDelta = new Vector2(1000, 300);
-        playerListText.gameObject.SetActive(false);
+        if (playerListText != null)
+        {
+            playerListText.gameObject.SetActive(false);
+        }
     }
 
-    public void SetRaceEnded()
+    public void ShowPlayerList()
     {
         showAtRaceEnd = true;
         UpdatePlayerList();

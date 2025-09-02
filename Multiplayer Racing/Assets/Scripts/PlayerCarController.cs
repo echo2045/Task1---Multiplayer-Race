@@ -5,8 +5,9 @@ public class PlayerCarController : MonoBehaviourPunCallbacks
 {
     public float moveSpeed = 10f;
     public float turnSpeed = 100f;
+    public Camera playerCamera; // Reference to the prefab camera
+
     private Rigidbody rb;
-    private Camera playerCamera; // To hold the camera for this player
 
     void Awake()
     {
@@ -16,62 +17,49 @@ public class PlayerCarController : MonoBehaviourPunCallbacks
             Debug.LogError("Rigidbody not found on PlayerCarController!");
         }
 
+     
+        Transform cameraHolder = transform.Find("CameraHolder");
+        if (cameraHolder != null)
+        {
+            playerCamera = cameraHolder.GetComponent<Camera>();
+        }
+
+
+        if (playerCamera == null)
+        {
+            Debug.LogWarning("Player camera not found! Assign a Camera on prefab or a child named 'CameraHolder'.");
+        }
+
+        // Enable camera only for local player
         if (photonView.IsMine)
         {
-            //  Local player: attach a camera
-            playerCamera = new GameObject("PlayerCamera").AddComponent<Camera>();
-            playerCamera.transform.SetParent(transform);
-            playerCamera.transform.localPosition = new Vector3(0, 3, -5); // Behind & above
-            playerCamera.transform.localRotation = Quaternion.Euler(15, 0, 0);
-            playerCamera.depth = 0;
+            if (playerCamera != null) playerCamera.enabled = true;
         }
         else
         {
-            //  Remote player: disable any cameras that might be on the prefab
-            Camera remoteCam = GetComponentInChildren<Camera>();
-            if (remoteCam != null)
-            {
-                remoteCam.enabled = false;
-            }
+            if (playerCamera != null) playerCamera.enabled = false;
         }
     }
 
     void FixedUpdate()
     {
-        //  Remote players skip input, but Rigidbody still syncs via Photon
+        // Only local player can move
         if (!photonView.IsMine) return;
 
-        // Movement input
+        // Get input
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
+        // Move
         Vector3 movement = transform.forward * vertical * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + movement);
 
+        // Turn
         float turn = horizontal * turnSpeed * Time.fixedDeltaTime;
-        Quaternion turnRotation = Quaternion.Euler(0, turn, 0);
+        Quaternion turnRotation = Quaternion.Euler(0f, turn, 0f);
         rb.MoveRotation(rb.rotation * turnRotation);
     }
 
-
-
-    // Optional: If you need to send custom data, implement IPunObservable
-    // For basic movement with PhotonRigidbodyView, this might not be strictly necessary
-    // public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    // {
-    //     if (stream.IsWriting)
-    //     {
-    //         // We own this player: send the others our data
-    //         stream.SendNext(rb.position);
-    //         stream.SendNext(rb.rotation);
-    //         stream.SendNext(rb.velocity);
-    //         stream.SendNext(rb.angularVelocity);
-    //     }
-    //     else
-    //     {
-    //         // Network player, receive data
-    //         // These will be automatically applied by PhotonRigidbodyView if you use it
-    //         // Otherwise, you'd interpolate here
-    //     }
-    // }
+    // Optional: for Photon Rigidbody sync
+    // public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) { ... }
 }
