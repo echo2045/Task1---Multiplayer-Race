@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Firebase;
 using Firebase.Database;
@@ -111,6 +113,49 @@ public class FirebaseManager : MonoBehaviour
                 Debug.Log($"Wrote to Firestore ({collectionName}): {message}");
             else
                 Debug.LogError("Failed to write to Firestore: " + task.Exception);
+        });
+    }
+
+    // ------------------------------
+    // NEW: Save race result to Firestore
+    // ------------------------------
+    // Save race result in Firestore with auto-generated document ID
+    public void SaveRaceResultToFirestore(string collection, Dictionary<string, object> data)
+    {
+        if (!IsReady)
+        {
+            Debug.LogWarning("Firebase not ready yet!");
+            return;
+        }
+
+        FirestoreDB.Collection(collection).AddAsync(data).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompletedSuccessfully)
+                Debug.Log("Race result saved in Firestore.");
+            else
+                Debug.LogError("Failed to save result in Firestore: " + task.Exception);
+        });
+    }
+
+    // ------------------------------
+    // NEW: Save race result to Realtime Database
+    // ------------------------------
+    // Save race result in Realtime DB with auto-generated key
+    public void SaveRaceResultToRealtime(string parentPath, Dictionary<string, object> data)
+    {
+        if (!IsReady)
+        {
+            Debug.LogWarning("Firebase not ready yet!");
+            return;
+        }
+
+        DatabaseReference refPath = DBreference.Child(parentPath).Push();
+        refPath.SetValueAsync(data).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompletedSuccessfully)
+                Debug.Log("Race result saved in Realtime DB.");
+            else
+                Debug.LogError("Failed to save result in Realtime DB: " + task.Exception);
         });
     }
 }

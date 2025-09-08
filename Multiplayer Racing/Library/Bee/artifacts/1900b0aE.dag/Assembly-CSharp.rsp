@@ -434,6 +434,7 @@
 "Assets/Scripts/PlayerListUI.cs"
 "Assets/Scripts/PlayerNameInput.cs"
 "Assets/Scripts/RaceManager.cs"
+"Assets/Scripts/RaceResultData.cs"
 "Assets/Scripts/StartLine.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

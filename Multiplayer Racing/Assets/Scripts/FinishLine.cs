@@ -5,7 +5,7 @@ using ExitGames.Client.Photon;
 
 public class FinishLine : MonoBehaviourPunCallbacks
 {
-    [SerializeField] private Text winnerText;
+    [SerializeField] private Text winnerText;       // UI element to show winner
     [SerializeField] private PlayerListUI playerListUI;
 
     private bool raceEnded = false;
@@ -23,7 +23,7 @@ public class FinishLine : MonoBehaviourPunCallbacks
         if (!raceEnded && other.CompareTag("Player"))
         {
             PhotonView view = other.GetComponent<PhotonView>();
-            if (view != null && view.IsMine) // only local player reports their time
+            if (view != null && view.IsMine) // only local player reports their own finish
             {
                 double finalTime = PhotonNetwork.Time - RaceManager.Instance.GetRaceStartTime();
                 photonView.RPC("RPC_DeclareWinner", RpcTarget.AllBuffered, view.Owner.NickName, finalTime);
@@ -49,17 +49,24 @@ public class FinishLine : MonoBehaviourPunCallbacks
             playerListUI.ShowPlayerList();
         }
 
-        // Save final time in Photon Custom Properties
+        // Save final time in Photon Custom Properties (for other players to see)
         var props = new Hashtable { { "RaceTime", finalTime } };
         PhotonNetwork.LocalPlayer.SetCustomProperties(props);
 
-        // Optionally save to Firebase
+        // Build race result data object
+        string roomId = PhotonNetwork.CurrentRoom != null ? PhotonNetwork.CurrentRoom.Name : "UnknownRoom";
+        RaceResultData result = new RaceResultData(winnerName, finalTime, roomId);
+
+        // Save race result to Firebase (both DBs)
         if (FirebaseManager.Instance != null && FirebaseManager.Instance.IsReady)
         {
-            FirebaseManager.Instance.WriteToRealtime($"Winner: {winnerName}, Time: {finalTime:F2}", "raceResults");
-            FirebaseManager.Instance.WriteToFirestore($"Winner: {winnerName}, Time: {finalTime:F2}", "raceResults");
+            FirebaseManager.Instance.SaveRaceResultToRealtime("raceResults", result.ToDict());
+            FirebaseManager.Instance.SaveRaceResultToFirestore("raceResults", result.ToDict());
+            Debug.Log($"Winner saved to Firebase: {winnerName}, Time: {finalTime:F2}");
         }
-
-        Debug.Log($"Winner saved: {winnerName}, Time: {finalTime:F2}");
+        else
+        {
+            Debug.LogWarning("Firebase not ready, race result not saved.");
+        }
     }
 }
