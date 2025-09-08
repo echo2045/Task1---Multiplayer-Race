@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:141-166
+	xmlns:tools
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:70-116
+	xmlns:android
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:117-140
+uses-permission#android.permission.INTERNET
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-65
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:20-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-77
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:20-74
+uses-feature#0x00030000
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-52
+	android:glEsVersion
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:17-49
+uses-feature#android.hardware.vulkan.version
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-91
+	android:required
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:64-88
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-63
+uses-feature#android.hardware.touchscreen
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-88
+	android:required
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:61-85
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:3-99
+	android:required
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:72-96
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-108
+	android:required
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:81-105
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:17-80
+application
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:3-26:17
+	android:extractNativeLibs
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:81-113
+	android:label
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:16-48
+	android:icon
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:49-80
+service#com.google.firebase.messaging.MessageForwardingService
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:5-167
+	android:exported
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:141-164
+	android:permission
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:84-140
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:14-83
+meta-data#unity.splash-mode
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
+	android:value
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
+meta-data#unity.splash-enable
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
+	android:value
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
+meta-data#unity.launch-fullscreen
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
+	android:value
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
+meta-data#unity.render-outside-safearea
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
+	android:value
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:61-81
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-60
+meta-data#notch.config
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
+	android:value
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
+meta-data#unity.auto-report-fully-drawn
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-84
+	android:value
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:61-81
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-60
+activity#com.google.firebase.MessagingUnityPlayerActivity
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-25:16
+	android:screenOrientation
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:303-339
+	android:launchMode
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:340-371
+	android:hardwareAccelerated
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:407-442
+	android:exported
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:443-466
+	android:resizeableActivity
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:372-406
+	android:configChanges
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:121-302
+	android:theme
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:79-120
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:15-78
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:7-22:23
+category#android.intent.category.LAUNCHER
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:9-69
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:19-66
+action#android.intent.action.MAIN
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:9-61
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:17-58
+meta-data#unityplayer.UnityActivity
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:7-82
+	android:value
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:59-79
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:18-58
+meta-data#notch_support
+ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:7-70
+	android:value
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:47-67
+	android:name
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:18-46
+uses-sdk
+INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml
+		INJECTED from E:\Ghost Interactive\Task1 - Multiplayer Race\Multiplayer Racing\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml

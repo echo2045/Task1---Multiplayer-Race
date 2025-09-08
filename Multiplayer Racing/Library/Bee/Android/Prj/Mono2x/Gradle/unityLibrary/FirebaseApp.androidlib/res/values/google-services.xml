@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_android_client_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://multiplayer-race-1115a-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+  <string name="gcm_defaultSenderId" translatable="false">1001085162712</string>
+  <string name="google_storage_bucket" translatable="false">multiplayer-race-1115a.firebasestorage.app</string>
+  <string name="project_id" translatable="false">multiplayer-race-1115a</string>
+  <string name="google_api_key" translatable="false">AIzaSyBLCbPm0CUrKJdAUetuA2q1DyGTj3aNPH4</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBLCbPm0CUrKJdAUetuA2q1DyGTj3aNPH4</string>
+  <string name="google_app_id" translatable="false">1:1001085162712:android:773aee4eb935f2106633ad</string>
+  <string name="default_android_client_id" translatable="false">1001085162712-05if3ppudqp5c6oprus31oh246ipj3se.apps.googleusercontent.com</string>
+  <string name="default_web_client_id" translatable="false">1001085162712-pb6v63ii7tcdbfjgj6rte2v74o05ekp0.apps.googleusercontent.com</string>
+</resources>

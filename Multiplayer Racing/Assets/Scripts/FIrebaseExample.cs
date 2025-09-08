@@ -15,6 +15,6 @@ public class FirebaseExample : MonoBehaviour
         Debug.Log(" Firebase is ready in FirebaseExample!");
 
         // Example write
-        FirebaseManager.Instance.WriteTestData("Hello from FirebaseExample!");
+       // FirebaseManager.Instance.WriteTestData("Hello from FirebaseExample!");
     }
 }

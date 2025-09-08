@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: -4061236104502436658}
   - component: {fileID: 6405625892980161073}
   - component: {fileID: -3617736090458703149}
+  - component: {fileID: -3329553340823204301}
   - component: {fileID: -4424437044173139625}
   m_Layer: 0
   m_Name: Free Racing Car
@@ -593,6 +594,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -3617736090458703149}
+  - {fileID: -3329553340823204301}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -612,6 +614,22 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &-3329553340823204301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311311803080157842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!114 &-4424437044173139625
 MonoBehaviour:
   m_ObjectHideFlags: 0

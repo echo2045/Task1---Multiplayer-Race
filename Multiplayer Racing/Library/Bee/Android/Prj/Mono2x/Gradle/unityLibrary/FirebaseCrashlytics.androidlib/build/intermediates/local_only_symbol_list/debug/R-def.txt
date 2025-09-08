@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+string com.crashlytics.android.build_id
+string com.google.firebase.crashlytics.unity_version

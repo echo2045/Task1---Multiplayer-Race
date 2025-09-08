@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - PlayerCarController
     Assembly-CSharp.dll:
     - FinishLine
+    - FirebaseExample
     - FirebaseManager
     - NetworkManager
     - PlayerCarController
@@ -28,6 +29,7 @@ ScriptsOnlyBuild:
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonRigidbodyView
+    - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
     Unity.Rider.Editor.dll:
@@ -107,59 +109,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16654}
-    - Class: 114
-      Script: {instanceID: 16708}
+      Script: {instanceID: 16700}
     - Class: 114
       Script: {instanceID: 16754}
     - Class: 114
-      Script: {instanceID: 16912}
+      Script: {instanceID: 16802}
     - Class: 114
-      Script: {instanceID: 17814}
+      Script: {instanceID: 16968}
     - Class: 114
-      Script: {instanceID: 18036}
+      Script: {instanceID: 17896}
     - Class: 114
-      Script: {instanceID: 18260}
+      Script: {instanceID: 18134}
     - Class: 114
-      Script: {instanceID: 18376}
+      Script: {instanceID: 18368}
     - Class: 114
-      Script: {instanceID: 19120}
+      Script: {instanceID: 18484}
     - Class: 114
-      Script: {instanceID: 19126}
+      Script: {instanceID: 19260}
     - Class: 114
-      Script: {instanceID: 19294}
+      Script: {instanceID: 19266}
     - Class: 114
-      Script: {instanceID: 20196}
+      Script: {instanceID: 19448}
     - Class: 114
-      Script: {instanceID: 20408}
+      Script: {instanceID: 20396}
     - Class: 114
-      Script: {instanceID: 20424}
+      Script: {instanceID: 20614}
     - Class: 114
-      Script: {instanceID: 20842}
+      Script: {instanceID: 20630}
     - Class: 114
-      Script: {instanceID: 20884}
+      Script: {instanceID: 21060}
     - Class: 114
-      Script: {instanceID: 20890}
+      Script: {instanceID: 21062}
     - Class: 114
-      Script: {instanceID: 21090}
+      Script: {instanceID: 21116}
     - Class: 114
-      Script: {instanceID: 21590}
+      Script: {instanceID: 21122}
     - Class: 114
-      Script: {instanceID: 21598}
+      Script: {instanceID: 21330}
     - Class: 114
-      Script: {instanceID: 22196}
+      Script: {instanceID: 21854}
     - Class: 114
-      Script: {instanceID: 22220}
+      Script: {instanceID: 21862}
     - Class: 114
-      Script: {instanceID: 22758}
+      Script: {instanceID: 22492}
     - Class: 114
-      Script: {instanceID: 23138}
+      Script: {instanceID: 22516}
     - Class: 114
-      Script: {instanceID: 23268}
+      Script: {instanceID: 23082}
     - Class: 114
-      Script: {instanceID: 23574}
+      Script: {instanceID: 23328}
     - Class: 114
-      Script: {instanceID: 25440}
+      Script: {instanceID: 23480}
+    - Class: 114
+      Script: {instanceID: 23614}
+    - Class: 114
+      Script: {instanceID: 23928}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1101,12 +1105,6 @@ ScriptsOnlyBuild:
     className: SmoothSyncMovement
   - hash:
       serializedVersion: 2
-      Hash: 47ee34eb8b6021efa0289dbbb17a5a85
-    assemblyName: Unity.TextMeshPro
-    namespaceName: TMPro
-    className: TMP_InputField
-  - hash:
-      serializedVersion: 2
       Hash: 177ac57e7b3c2c2bd620d9e3208e5d26
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1117,6 +1115,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerStayMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 47ee34eb8b6021efa0289dbbb17a5a85
+    assemblyName: Unity.TextMeshPro
+    namespaceName: TMPro
+    className: TMP_InputField
   - hash:
       serializedVersion: 2
       Hash: feea6029e3148d3ef3644842f1bab51a
@@ -1243,6 +1247,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities
     namespaceName: Photon.Pun.UtilityScripts
     className: PunPlayerScores
+  - hash:
+      serializedVersion: 2
+      Hash: d645545ddea9ace407b4b8b524b83f65
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FirebaseExample
   - hash:
       serializedVersion: 2
       Hash: 4ea783b41b19fc5492b99a0e1b5d845d
@@ -1423,6 +1433,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 2ccb6b84e93730725a9d35e8e1225206
+    assemblyName: Firebase.Platform.dll
+    namespaceName: Firebase.Platform
+    className: FirebaseMonoBehaviour
   - hash:
       serializedVersion: 2
       Hash: 7ba86577a1f3d5b35e9eb696237bfa1e
@@ -1755,6 +1771,12 @@ ScriptsOnlyBuild:
     className: UnityOnParticleCollisionMessageListener
   - hash:
       serializedVersion: 2
+      Hash: e368a542a0253980b2a08ede18f74acb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FirebaseManager
+  - hash:
+      serializedVersion: 2
       Hash: 39adf4b07c2f6364e30cbfc514879d5b
     assemblyName: PhotonUnityNetworking.Utilities
     namespaceName: Photon.Pun.UtilityScripts
@@ -1921,26 +1943,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 2ccb6b84e93730725a9d35e8e1225206
-    assemblyName: Firebase.Platform.dll
-    namespaceName: Firebase.Platform
-    className: FirebaseMonoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e368a542a0253980b2a08ede18f74acb
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FirebaseManager
-  - hash:
-      serializedVersion: 2
-      Hash: d645545ddea9ace407b4b8b524b83f65
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FirebaseExample
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   playerPath: E:/Ghost Interactive/Task1 - Multiplayer Race/Builds/Build 0.01/Multiplayer
-    Racing.exe
+    Race.exe

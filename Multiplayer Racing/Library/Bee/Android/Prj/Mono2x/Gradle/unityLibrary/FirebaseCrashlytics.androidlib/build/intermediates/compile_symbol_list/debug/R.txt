@@ -1,0 +1,2 @@
+int string com_crashlytics_android_build_id 0x0
+int string com_google_firebase_crashlytics_unity_version 0x0

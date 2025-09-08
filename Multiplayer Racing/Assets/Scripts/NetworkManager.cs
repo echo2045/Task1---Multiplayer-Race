@@ -28,8 +28,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        // Assign nickname based on ActorNumber
-        PhotonNetwork.NickName = "Player " + PhotonNetwork.LocalPlayer.ActorNumber;
+        // Nickname is now set in PlayerNameInput.cs (Name Entry Scene)
         Debug.Log("Joined Room! Nickname: " + PhotonNetwork.NickName);
 
         if (PhotonNetwork.IsMasterClient)

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.ghostInteractive.MultiplayerRace.launcher-merged_res-24:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.ghostInteractive.MultiplayerRace.launcher-main-26:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.ghostInteractive.MultiplayerRace.launcher-merged_res-24:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.ghostInteractive.MultiplayerRace.launcher-main-26:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.ghostInteractive.MultiplayerRace.launcher-merged_res-24:/mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "com.ghostInteractive.MultiplayerRace.launcher-main-26:/mipmap-anydpi-v26/app_icon_round.xml"
+    },
+    {
+        "merged": "com.ghostInteractive.MultiplayerRace.launcher-merged_res-24:/mipmap-mdpi_app_icon.png.flat",
+        "source": "com.ghostInteractive.MultiplayerRace.launcher-main-26:/mipmap-mdpi/app_icon.png"
+    },
+    {
+        "merged": "com.ghostInteractive.MultiplayerRace.launcher-merged_res-24:/mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "com.ghostInteractive.MultiplayerRace.launcher-main-26:/mipmap-anydpi-v26/app_icon.xml"
+    }
+]
