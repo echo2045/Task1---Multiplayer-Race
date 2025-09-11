@@ -2,6 +2,7 @@ using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
 using ExitGames.Client.Photon;
+using System.Threading.Tasks; 
 
 public class FinishLine : MonoBehaviourPunCallbacks
 {
@@ -32,7 +33,7 @@ public class FinishLine : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    private void RPC_DeclareWinner(string winnerName, double finalTime)
+    private async void RPC_DeclareWinner(string winnerName, double finalTime) // Changed to async void
     {
         if (raceEnded) return;
         raceEnded = true;
@@ -60,9 +61,16 @@ public class FinishLine : MonoBehaviourPunCallbacks
         // Save race result to Firebase (both DBs)
         if (FirebaseManager.Instance != null && FirebaseManager.Instance.IsReady)
         {
-            FirebaseManager.Instance.SaveRaceResultToRealtime("raceResults", result.ToDict());
-            FirebaseManager.Instance.SaveRaceResultToFirestore("raceResults", result.ToDict());
-            Debug.Log($"Winner saved to Firebase: {winnerName}, Time: {finalTime:F2}");
+            try
+            {
+                await FirebaseManager.Instance.SaveRaceResultToRealtimeAsync("raceResults", result.ToDict()); 
+                await FirebaseManager.Instance.SaveRaceResultToFirestoreAsync("raceResults", result.ToDict());
+                Debug.Log($"Winner saved to Firebase: {winnerName}, Time: {finalTime:F2}");
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("Failed to save race result to Firebase: " + e);
+            }
         }
         else
         {

@@ -5,7 +5,7 @@ using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
 using Firebase.Firestore;
-
+using System.Threading.Tasks;
 public class FirebaseManager : MonoBehaviour
 {
     public static FirebaseManager Instance { get; private set; }
@@ -61,7 +61,7 @@ public class FirebaseManager : MonoBehaviour
                 FirestoreDB = FirebaseFirestore.DefaultInstance;
 
                 IsReady = true;
-                Debug.Log("Firebase ready! (Realtime Database + Firestore)");
+                Debug.Log("Firebase ready! (Realtime DB + Firestore)");
             }
             else
             {
@@ -70,6 +70,11 @@ public class FirebaseManager : MonoBehaviour
         });
     }
 
+
+
+
+
+    /*
     // ------------------------------
     // Write to Realtime Database (custom path)
     // ------------------------------
@@ -117,9 +122,8 @@ public class FirebaseManager : MonoBehaviour
     }
 
     // ------------------------------
-    // NEW: Save race result to Firestore
+    // Save race result to Firestore
     // ------------------------------
-    // Save race result in Firestore with auto-generated document ID
     public void SaveRaceResultToFirestore(string collection, Dictionary<string, object> data)
     {
         if (!IsReady)
@@ -138,9 +142,8 @@ public class FirebaseManager : MonoBehaviour
     }
 
     // ------------------------------
-    // NEW: Save race result to Realtime Database
+    // Save race result to Realtime Database
     // ------------------------------
-    // Save race result in Realtime DB with auto-generated key
     public void SaveRaceResultToRealtime(string parentPath, Dictionary<string, object> data)
     {
         if (!IsReady)
@@ -158,4 +161,104 @@ public class FirebaseManager : MonoBehaviour
                 Debug.LogError("Failed to save result in Realtime DB: " + task.Exception);
         });
     }
+
+    */
+
+
+    // ------------------------------
+    // Write to Realtime Database (custom path)
+    // ------------------------------
+    public async Task WriteToRealtimeAsync(string childPath, string message)
+    {
+        if (!IsReady)
+        {
+            Debug.LogWarning("Firebase not ready yet!");
+            return;
+        }
+
+        string key = DBreference.Child(childPath).Push().Key;
+
+        try
+        {
+            await DBreference.Child(childPath).Child(key).SetValueAsync(message);
+            Debug.Log($"Wrote to Realtime DB ({childPath}): {message}");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to write to Realtime DB: " + e);
+        }
+    }
+
+    // ------------------------------
+    // Write to Firestore (custom collection)
+    // ------------------------------
+    public async Task WriteToFirestoreAsync(string collectionName, string message)
+    {
+        if (!IsReady)
+        {
+            Debug.LogWarning("Firebase not ready yet!");
+            return;
+        }
+
+        DocumentReference docRef = FirestoreDB.Collection(collectionName).Document();
+        var messageData = new { text = message, timestamp = Timestamp.GetCurrentTimestamp() };
+
+        try
+        {
+            await docRef.SetAsync(messageData);
+            Debug.Log($"Wrote to Firestore ({collectionName}): {message}");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to write to Firestore: " + e);
+        }
+    }
+
+    // ------------------------------
+    // Save race result to Firestore
+    // ------------------------------
+    public async Task SaveRaceResultToFirestoreAsync(string collection, Dictionary<string, object> data)
+    {
+        if (!IsReady)
+        {
+            Debug.LogWarning("Firebase not ready yet!");
+            return;
+        }
+
+        try
+        {
+            await FirestoreDB.Collection(collection).AddAsync(data);
+            Debug.Log("Race result saved in Firestore.");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to save result in Firestore: " + e);
+        }
+    }
+
+    // ------------------------------
+    // Save race result to Realtime Database
+    // ------------------------------
+    public async Task SaveRaceResultToRealtimeAsync(string parentPath, Dictionary<string, object> data)
+    {
+        if (!IsReady)
+        {
+            Debug.LogWarning("Firebase not ready yet!");
+            return;
+        }
+
+        DatabaseReference refPath = DBreference.Child(parentPath).Push();
+
+        try
+        {
+            await refPath.SetValueAsync(data);
+            Debug.Log("Race result saved in Realtime DB.");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to save result in Realtime DB: " + e);
+        }
+    }
+
+
 }
